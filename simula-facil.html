@@ -1,0 +1,72 @@
+<meta charset="UTF8">
+<html>
+
+<head>
+    <title>Simula Fácil</title>
+    <script src="filtration-module.js"></script>
+    <link rel="stylesheet" href="filtration-module.css">
+</head>
+
+<body>
+    <div class="OnOff">
+        <div class="pumpOn pumpStatus">
+            <input name="pumpButton" type="checkbox" id="pumpStatus" onclick="pumpOn()">
+            <label for="pumpStatus" onselectstart="return false">Bomba</label>
+        </div>
+    </div>
+    <ul class="registers">
+        <li class="register suctionRegister">
+            <input class="registerChecked" name="registers" type="checkbox" id="suctionRegister" onclick="openSuctionRegister()">
+            <label for="suctionRegister" onselectstart="return false">Registro de</br> Aspiração</label>
+        </li>
+        <li class="register returnRegister">
+            <input class="registerChecked" name="registers" type="checkbox" id="returnRegister" onclick="openReturnRegister()">
+            <label for="returnRegister" onselectstart="return false">Registro de</br> Retorno</label>
+        </li>
+        <li class="register drainBottom">
+            <input class="registerChecked" name="registers" type="checkbox" id="drainBottom" onclick="openDrainBottom()">
+            <label for="drainBottom" onselectstart="return false">Dreno de</br> Fundo</label>
+        </li>
+        <li class="register sewerRegister">
+            <input class="registerChecked" name="registers" type="checkbox" id="sewerRegister" onclick="openSewerRegister()">
+            <label for="sewerRegister" onselectstart="return false">Registro de</br> Esgoto</label>
+        </li>
+        <li class="register skimmerRegister">
+            <input name="registers" type="checkbox" id="skimmerRegister" onclick="openSkimmerRegister()">
+            <label for="skimmerRegister" onselectstart="return false">Registro da</br> Coadeira</label>
+        </li>
+    </ul>
+    <div class="filterPositionBox">
+        <ul class="filterPositions">
+            <li class="filter-position closed">
+                <input name="filterPosition" type="radio" id="closed" onclick="closedClicked()" checked>
+                <label for="closed">Fechar</label>
+            </li>
+            <li class="filter-position waste">
+                <input name="filterPosition" type="radio" id="waste" onclick="wasteClicked()">
+                <label for="waste">Drenar</label>
+            </li>
+            <li class="filter-position filtrate">
+                <input name="filterPosition" type="radio" id="filtrate" onclick="filtrateClicked()">
+                <label for="filtrate">Filtrar</label>
+            </li>
+            <li class="filter-position rinse">
+                <input name="filterPosition" type="radio" id="rinse" onclick="rinseClicked()">
+                <label for="rinse">Pré Filtrar</label>
+            </li>
+            <li class="filter-position recirculate">
+                <input name="filterPosition" type="radio" id="recirculate" onclick="recirculateClicked()">
+                <label for="recirculate">Recircular</label>
+            </li>
+            <li class="filter-position backwash">
+                <input name="filterPosition" type="radio" id="backwash" onclick="backwashClicked()">
+                <label for="backwash">Retrolavar</label>
+            </li>
+        </ul>
+    </div>
+</body>
+<footer>
+
+</footer>
+
+</html>

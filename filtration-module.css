@@ -1,0 +1,195 @@
+body {
+    background-color: rgb(235, 225, 225);
+}
+
+.OnOff {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.OnOff:after {
+    content: "";
+    clear: both;
+}
+
+.pumpOn {
+    border: 3px solid #ccc;
+    border-color: red;
+    box-sizing: border-box;
+    margin-top: 5px;
+    height: 70px;
+    position: relative;
+    width: 120px;
+}
+
+.pumpOn+.pumpOn {
+    margin-left: 0px;
+}
+
+.pumpOn label {
+    background: #fff no-repeat center center;
+    bottom: 1px;
+    cursor: pointer;
+    display: block;
+    font-size: 20;
+    left: 1px;
+    position: absolute;
+    right: 1px;
+    text-align: center;
+    top: 1px;
+    white-space: nowrap;
+}
+
+.OnOff input:checked+label {
+    outline: 4px solid green;
+}
+
+.OnOff input:checked+label:after {
+    bottom: -10px;
+    content: "";
+    display: inline-block;
+    height: 20px;
+    position: absolute;
+    right: -10px;
+    width: 20px;
+}
+
+@-moz-document url-prefix() {
+    .OnOff input:checked+label:after {
+        bottom: 0;
+        right: 0;
+        background-color: green;
+    }
+}
+
+.registers {
+    list-style: none;
+    padding: 0;
+}
+
+.registers:after {
+    content: "";
+    clear: both;
+}
+
+.register {
+    border: 3px solid #ccc;
+    border-color: red;
+    box-sizing: border-box;
+    float: left;
+    margin-top: 5px;
+    height: 70px;
+    position: relative;
+    width: 120px;
+}
+
+.register+.register {
+    margin-left: 25px;
+}
+
+.register label {
+    background: #fff no-repeat center center;
+    bottom: 1px;
+    cursor: pointer;
+    display: block;
+    font-size: 20;
+    left: 1px;
+    position: absolute;
+    right: 1px;
+    text-align: center;
+    top: 1px;
+    white-space: nowrap;
+}
+
+.registers input:checked+label {
+    outline: 4px solid rgb(75, 209, 246);
+}
+
+.registers input:checked+label:after {
+    /* background: url(checked.png); */
+    bottom: -10px;
+    content: "";
+    display: inline-block;
+    height: 20px;
+    position: absolute;
+    right: -10px;
+    width: 20px;
+}
+
+@-moz-document url-prefix() {
+    .registers input:checked+label:after {
+        bottom: 0;
+        right: 0;
+        background-color: #21b4d0;
+    }
+}
+
+.filterPositions {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.filterPositions:after {
+    content: "";
+    clear: both;
+}
+
+.filter-position {
+    border: 3px solid #ccc;
+    border-color: red;
+    box-sizing: border-box;
+    float: left;
+    height: 70px;
+    position: relative;
+    width: 120px;
+}
+
+.filterPositionBox {
+    float: left;
+    margin-top: 25px;
+}
+
+.filter-position+.filter-position {
+    margin-left: 25px;
+}
+
+.filter-position label {
+    background: #fff no-repeat center center;
+    bottom: 1px;
+    cursor: pointer;
+    display: block;
+    font-size: 20;
+    text-align: center;
+    line-height: 60px;
+    left: 1px;
+    position: absolute;
+    right: 1px;
+    /* text-indent: 100%; */
+    top: 1px;
+    white-space: nowrap;
+}
+
+.filterPositions input:checked+label {
+    outline: 4px solid #21b4d0;
+}
+
+.filterPositions input:checked+label:after {
+    /* background: url(checked.png); */
+    bottom: -10px;
+    content: "";
+    display: inline-block;
+    height: 20px;
+    position: absolute;
+    right: -10px;
+    width: 20px;
+}
+
+@-moz-document url-prefix() {
+    .filterPositions input:checked+label:after {
+        bottom: 0;
+        right: 0;
+        background-color: #21b4d0;
+    }
+}
